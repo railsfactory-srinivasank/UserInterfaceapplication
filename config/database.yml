@@ -1,0 +1,18 @@
+development:
+  adapter: mysql
+  database: devise_development
+  username: root
+  password: root
+  host: localhost
+test:
+  adapter: mysql
+  database: devise_test
+  username: root
+  password: root
+  host: localhost
+production:
+  adapter: mysql
+  database: devise_production
+  username: root
+  password: root
+  host: localhost

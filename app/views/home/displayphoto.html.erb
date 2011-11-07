@@ -1,0 +1,18 @@
+<!-- View page to display the user's picture -->
+<!-  Corresponding Method name: displayphoto Controller Name: home_controller.rb -->
+
+<!-- Displaying the User's picture  -->
+
+<h1><%= @user.id %></h1>
+<p><strong>Email Id: </strong> <%= @user.email %><br />
+<strong>Created Date:</strong> <%= @user.created_at %><br />
+
+<%= image_tag @user.photo.url %>
+<!-- Not in Use
+<%= image_tag @user.photo.url(:thumb) %>
+-->
+
+</p>
+<hr />
+
+
