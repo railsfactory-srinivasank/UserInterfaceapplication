@@ -1,0 +1,18 @@
+/ Editing the User's profile
+<!-  Corresponding Method name: edit Controller Name: home_controller.rb -->
+%h1 Edit Profile
+/ Begining of the form
+= form_tag update_path(:id => @user.id),:method=>:put,:multipart => true
+- @user.errors.full_messages.each do |msg|
+  %li= msg
+%p
+  %label{:for => "user_email"}> Email
+  \:
+  \#{text_field 'user', 'email'}
+/
+  <p><label for="user_created_at">Created at</label>:
+  <haml:loud> text_field 'user', 'created_at' </haml:loud></p>
+= file_field_tag 'user[photo]'
+= submit_tag "Save changes"
+= form_tag
+/ End of the form

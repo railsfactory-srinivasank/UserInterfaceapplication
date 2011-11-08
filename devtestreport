@@ -1,0 +1,27 @@
+Tested
+
+1.Myinfo
+2.Login user
+3.Edit profile 
+ validation
+ Committing to the database
+Back link in homepage
+cancel Button
+4.Admin Module
+  a.Admin Section link works
+  b.Signout link works
+  c. Home link works
+  d. Home Page works
+  e. Admin sign in as user works
+ 
+Issues
+1.Copy and paste of the token link
+http://localhost:3000/token
+2.Validation of the photo picture as blank.
+
+3.http://localhost:3000/token {Needs to be checked}
+
+4.Email confirmation checked
+
+5. Remember me option
+

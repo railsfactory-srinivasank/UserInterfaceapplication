@@ -8,6 +8,8 @@ class HomeController < ApplicationController
 #Index method for home controller
 
 def index
+  
+  
 
   end
 

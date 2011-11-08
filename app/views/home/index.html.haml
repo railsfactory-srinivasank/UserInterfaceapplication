@@ -1,0 +1,12 @@
+/ Default view page
+%h1 Hello!
+/ Validation of User and administrator  and navigating to the respective page
+- unless admin_signed_in?
+  %p= link_to 'Sign up as Admin', new_admin_registration_path
+  %p= link_to 'Sign in as Admin', new_admin_session_path
+- unless user_signed_in?
+  %p= link_to 'Sign up as User', new_user_registration_path
+  %p= link_to 'Sign in as User', new_user_session_path
+- if user_signed_in?
+  %p= link_to 'Token Authentication Example', token_path(:auth_token => current_user.authentication_token)
+%p Hello World!
